@@ -25,7 +25,7 @@ def handle_start(message):
 def handle_text_document(message):
     if message.text == "аниме-арты про любовь :3":
         
-        all_files_in_directory = os.listdir(r"D:\never feel it")       # Тут он выбирает случайный файл из директории, пишет его название в консоль ,
+        all_files_in_directory = os.listdir(r"full_path_to_folder_with_your_files")       # Тут он выбирает случайный файл из директории, пишет его название в консоль ,
         random_file = random.choice(all_files_in_directory)            # для вашего удобства и отправляет его пользователю 
         print(all_files_in_directory)
         img = open(r"D:\never feel it" + "/" + random_file, 'rb')
@@ -36,7 +36,7 @@ def handle_text_document(message):
         img.close()
     elif message.text == "эпические арты":                           # Тоже самое , что и в предущем примере
         
-        all_files_in_directory = os.listdir(r"D:\epic arts")
+        all_files_in_directory = os.listdir(r"full_path_to_folder_with_your_files")
         random_file = random.choice(all_files_in_directory)
         print(all_files_in_directory)
         img = open(r"D:\epic arts" + "/" + random_file, 'rb')
@@ -47,7 +47,7 @@ def handle_text_document(message):
         img.close()
     elif message.text == 'Если есть за кем грустить':               # Повторяет предущие действия , только теперь задействует аудио,которое пользователь
         
-        directory = r"C:\Users\111\pain bot\Teleg_music"            # может скачать или просто послушать
+        directory = r"full_path_to_folder_with_your_files"            # может скачать или просто послушать
         all_files_in_directory = os.listdir(directory)
         random_file = random.choice(all_files_in_directory)
         song =  open(directory + "/" + random_file, "rb")
@@ -56,7 +56,7 @@ def handle_text_document(message):
         song.close()
     elif message.text == "скинь аниме-гифку":                       # Повторяет предущие действия , только теперь задействует gif файлы  
         
-        directory = "D:\gifs telegram"
+        directory = r"full_path_to_folder_with_your_files"
         all_files_in_directory = os.listdir(directory)
         random_file = random.choice(all_files_in_directory)
         giff = open(directory + "/" + random_file, "rb")
@@ -65,7 +65,7 @@ def handle_text_document(message):
         giff.close()
     elif message.text == "аниме-мемы":
         
-        all_files_in_directory = os.listdir(r"D:\anime memes telegram") 
+        all_files_in_directory = os.listdir(r"full_path_to_folder_with_your_files") 
         random_file = random.choice(all_files_in_directory)
         print(all_files_in_directory)
         img = open(r"D:\anime memes telegram" + "/" + random_file, 'rb')
@@ -76,7 +76,7 @@ def handle_text_document(message):
         img.close()
     elif message.text == "гули , вампиры и прочие причуды":
         
-        all_files_in_directory = os.listdir(r"D:\for tgbot")
+        all_files_in_directory = os.listdir(r"full_path_to_folder_with_your_files")
         random_file = random.choice(all_files_in_directory)
         print(all_files_in_directory)
         img = open(r"D:\for tgbot" + "/" + random_file, 'rb')
@@ -87,7 +87,7 @@ def handle_text_document(message):
         img.close()
     elif message.text == "релакс-арты":
         
-        all_files_in_directory = os.listdir(r"C:\Users\111\pain bot\peaceful arts")
+        all_files_in_directory = os.listdir(r"full_path_to_folder_with_your_files")
         random_file = random.choice(all_files_in_directory)
         print(all_files_in_directory)
         img = open(r"C:\Users\111\pain bot\peaceful arts" + "/" + random_file, 'rb')
